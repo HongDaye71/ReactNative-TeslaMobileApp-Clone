@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import CarsList from './CarsList'; 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CarsList />
+      {/*CarsList(스크롤링 시 나타날 3개 페이지 내 정보)*/}
       <StatusBar style="auto" />
     </View>
   );
